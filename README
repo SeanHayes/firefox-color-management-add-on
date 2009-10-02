@@ -1,0 +1,12 @@
+= README =
+Please see COPYING file for copyright infomation.
+
+== Source Code ==
+The source code is located in the dev/ directory.
+
+== Building the .xpi ==
+The building process can be automated by using the Extension Developer add-on
+for Firefox: https://addons.mozilla.org/en-US/firefox/addon/7434.
+
+The resulting file should be named in the following format and placed in the builds/ directory:
+color_management_<version>.xpi
