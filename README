@@ -13,6 +13,15 @@ Either your browser will prompt you to install the add-on, or it will get downlo
 3. Select the .xpi file that was downloaded and open it.
 4. Firefox should now install the add-on.
 
+== Live Testing the Development Code ==
+Building an .xpi and installing it isn't necessary to test add-on development code within Firefox. To try out the development code:
+1. Open your Firefox profile directory
+2. Enter the extensions directory
+3. Create a file named "color_management@seanhayes.name".
+4. Inside this file, type the path to the directory of the development code (e.g. /home/user/firefox-color-management-add-on/dev/) and save.
+
+The next time you open Firefox with that profile, the development version of the add-on will be installed.
+
 == Source Code ==
 The source code is located in the dev/ directory.
 
