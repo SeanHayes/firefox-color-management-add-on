@@ -1,9 +1,0 @@
-#profile_desc
-{
-	width: 27em;
-}
-
-#basic_options_pane vbox
-{
-	height: 25em;
-}
