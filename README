@@ -1,6 +1,18 @@
 = README =
 Please see COPYING file for copyright infomation.
 
+== Installation ==
+Download from here:
+http://github.com/SeanHayes/firefox-color-management-add-on/downloads
+https://addons.mozilla.org/en-US/firefox/addon/6891
+
+Either your browser will prompt you to install the add-on, or it will get downloaded to your computer. If it gets downloaded or if you're using an .xpi file from the builds/ directory:
+
+1. Open Firefox (or what ever XUL app you're using)
+2. Go to File -> Open File
+3. Select the .xpi file that was downloaded and open it.
+4. Firefox should now install the add-on.
+
 == Source Code ==
 The source code is located in the dev/ directory.
 
