@@ -1,0 +1,24 @@
+<!ENTITY options_window.title "Color Management Preferences">
+<!ENTITY options_basic_pane.title "Basic">
+<!ENTITY options_advanced_pane.title "Advanced">
+<!ENTITY options_window.note "Note: Changes take effect upon browser restart.">
+<!ENTITY options_mode.label "Enable color management for:">
+<!ENTITY options_mode.access_key "E">
+<!ENTITY options_mode_option_1.label "No images">
+<!ENTITY options_mode_option_2.label "All images">
+<!ENTITY options_mode_option_3.label "Only images with ICC tags">
+<!ENTITY options_display_profile.description "Here you can specify the path to your monitor's color profile. If left blank, the system default is used. If there's no system default, a default sRGB profile is used.">
+<!ENTITY options_display_profile.label "Set Color Profile: ">
+<!ENTITY options_display_profile.button "Browse">
+<!ENTITY options_rendering_intent.label "Select rendering intent:">
+<!ENTITY options_rendering_intent.access_key "r">
+<!ENTITY options_rendering_intent_option_1.label "Embedded">
+<!ENTITY options_rendering_intent_option_1.desc "Use intent embedded in images.">
+<!ENTITY options_rendering_intent_option_2.label "Perceptual">
+<!ENTITY options_rendering_intent_option_2.desc "Preserves detail, good for general purpose image viewing.">
+<!ENTITY options_rendering_intent_option_3.label "Media-relative colorimetric">
+<!ENTITY options_rendering_intent_option_3.desc "Rescales color spectrum so the white point of the display is mapped to the white point of the reference medium.">
+<!ENTITY options_rendering_intent_option_4.label "Saturation">
+<!ENTITY options_rendering_intent_option_4.desc "Preserves color vividness at the expense of hue precision.">
+<!ENTITY options_rendering_intent_option_5.label "ICC-Absolute colorimetric">
+<!ENTITY options_rendering_intent_option_5.desc "Most useful for spot color.">

@@ -1,0 +1,3 @@
+content	color_management	chrome/content/
+skin	color_management classic/1.0	chrome/skin/
+locale	color_management en-US	chrome/locale/en-US/

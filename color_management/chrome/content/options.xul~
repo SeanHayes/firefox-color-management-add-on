@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://color_management/skin/options.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://color_management/locale/options.dtd">
+<prefwindow
+	id="color_management_prefs"
+	title="&options_window.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	buttons="accept,cancel"
+	>
+	<stringbundleset id="strbundles">
+		<stringbundle id="options.properties" src="chrome://color_management/locale/options.properties"/>
+	</stringbundleset>
+	<prefpane id="basic_options_pane" label="&options_basic_pane.title;">
+		<preferences>
+			<preference id="mode" name="gfx.color_management.mode" type="int"/>
+			<preference id="profile" name="gfx.color_management.display_profile" type="string"/>
+		</preferences>
+		<vbox>
+			<label control="mode_control" value="&options_mode.label;" accesskey="&options_mode.access_key;"/>
+			<radiogroup id="mode_control" preference="mode">
+				<radio label="&options_mode_option_1.label;" value="0"/>
+				<radio label="&options_mode_option_2.label;" value="1"/>
+				<radio label="&options_mode_option_3.label;" value="2"/>
+			</radiogroup>
+			<groupbox>
+				<caption label="Display Profile"/>
+				<description id="profile_desc">&options_display_profile.description;</description>
+				<hbox>
+					<label control="profile_field" value="&options_display_profile.label;"/>
+					<textbox preference="profile" id="profile_field"/>
+					<command id="chooseProfile" oncommand="fileSelect();"/>
+					<button id="profileBtn" label="&options_display_profile.button;" command="chooseProfile"/>
+				</hbox>
+			</groupbox>
+		</vbox>
+	</prefpane>
+	<prefpane id="advanced_options_pane" label="&options_advanced_pane.title;">
+		<preferences>
+			<preference id="rendering_intent" name="gfx.color_management.rendering_intent" type="int"/>
+		</preferences>
+		<vbox>
+			<label control="rendering_intent_control" value="&options_rendering_intent.label;" accesskey="&options_rendering_intent.access_key;"/>
+			<radiogroup id="rendering_intent_control" preference="rendering_intent">
+				<radio label="&options_rendering_intent_option_1.label;" value="-1" tooltiptext="&options_rendering_intent_option_1.desc;"/>
+				<radio label="&options_rendering_intent_option_2.label;" value="0" tooltiptext="&options_rendering_intent_option_2.desc;"/>
+				<radio label="&options_rendering_intent_option_3.label;" value="1" tooltiptext="&options_rendering_intent_option_3.desc;"/>
+				<radio label="&options_rendering_intent_option_4.label;" value="2" tooltiptext="&options_rendering_intent_option_4.desc;"/>
+				<radio label="&options_rendering_intent_option_5.label;" value="3" tooltiptext="&options_rendering_intent_option_5.desc;"/>
+			</radiogroup>
+		</vbox>
+	</prefpane>
+	<description id="note">&options_window.note;</description>
+	<script type="application/x-javascript" src="chrome://color_management/content/options.js"/>
+</prefwindow>
