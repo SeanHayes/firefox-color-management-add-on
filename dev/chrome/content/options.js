@@ -16,6 +16,7 @@ function fileSelect()
 		var dir = '';
 		var path_prefs = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
 		path_prefs = path_prefs.getBranch("extensions.color_management.");
+		
 		if(os.indexOf("win") > -1)
 		{
 			dir = path_prefs.getCharPref("displayDirectory.win");
@@ -29,6 +30,7 @@ function fileSelect()
 			dir = path_prefs.getCharPref("displayDirectory.nix");
 		}
 		var path = Components.classes["@mozilla.org/file/local;1"].createInstance(Components.interfaces.nsILocalFile);
+		//FIXME: If the directory doesn't exist the script fails silently here
 		path.initWithPath(dir);
 		if(path.exists())
 		{
